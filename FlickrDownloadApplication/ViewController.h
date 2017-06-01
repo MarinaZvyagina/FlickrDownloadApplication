@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FDADataBase.h"
 
 @interface ViewController : UIViewController
 
+-(instancetype) initWithPicturesManager:(id<FDADataBase>) picturesManager;
 
 @end
 

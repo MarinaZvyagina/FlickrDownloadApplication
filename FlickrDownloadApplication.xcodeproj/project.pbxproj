@@ -14,6 +14,11 @@
 		14458C311EDF27AB00BC2A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14458C301EDF27AB00BC2A4D /* Assets.xcassets */; };
 		14458C341EDF27AB00BC2A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14458C321EDF27AB00BC2A4D /* LaunchScreen.storyboard */; };
 		14458C3F1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458C3E1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.m */; };
+		14458C671EDF283000BC2A4D /* FDAFlickrDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458C651EDF283000BC2A4D /* FDAFlickrDataBase.m */; };
+		14458C6A1EDF28A500BC2A4D /* FDACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458C691EDF28A500BC2A4D /* FDACell.m */; };
+		14458C6E1EDF57E400BC2A4D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14458C6D1EDF57E400BC2A4D /* Masonry.framework */; };
+		14458C6F1EDF57E700BC2A4D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14458C6D1EDF57E400BC2A4D /* Masonry.framework */; };
+		14458C701EDF57E800BC2A4D /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14458C6D1EDF57E400BC2A4D /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,20 @@
 			remoteInfo = FlickrDownloadApplication;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14458C711EDF57E800BC2A4D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14458C701EDF57E800BC2A4D /* Masonry.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14458C211EDF27AB00BC2A4D /* FlickrDownloadApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrDownloadApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +59,12 @@
 		14458C3A1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrDownloadApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14458C3E1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrDownloadApplicationTests.m; sourceTree = "<group>"; };
 		14458C401EDF27AB00BC2A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14458C631EDF283000BC2A4D /* FDADataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDADataBase.h; sourceTree = "<group>"; };
+		14458C641EDF283000BC2A4D /* FDAFlickrDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAFlickrDataBase.h; sourceTree = "<group>"; };
+		14458C651EDF283000BC2A4D /* FDAFlickrDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAFlickrDataBase.m; sourceTree = "<group>"; };
+		14458C681EDF28A500BC2A4D /* FDACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDACell.h; sourceTree = "<group>"; };
+		14458C691EDF28A500BC2A4D /* FDACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDACell.m; sourceTree = "<group>"; };
+		14458C6D1EDF57E400BC2A4D /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14458C6F1EDF57E700BC2A4D /* Masonry.framework in Frameworks */,
+				14458C6E1EDF57E400BC2A4D /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +93,7 @@
 				14458C231EDF27AB00BC2A4D /* FlickrDownloadApplication */,
 				14458C3D1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests */,
 				14458C221EDF27AB00BC2A4D /* Products */,
+				14458C6C1EDF57E400BC2A4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +109,12 @@
 		14458C231EDF27AB00BC2A4D /* FlickrDownloadApplication */ = {
 			isa = PBXGroup;
 			children = (
+				14458C661EDF283000BC2A4D /* DataBase */,
 				14458C271EDF27AB00BC2A4D /* AppDelegate.h */,
 				14458C281EDF27AB00BC2A4D /* AppDelegate.m */,
 				14458C2A1EDF27AB00BC2A4D /* ViewController.h */,
 				14458C2B1EDF27AB00BC2A4D /* ViewController.m */,
+				14458C6B1EDF28B000BC2A4D /* Cell */,
 				14458C2D1EDF27AB00BC2A4D /* Main.storyboard */,
 				14458C301EDF27AB00BC2A4D /* Assets.xcassets */,
 				14458C321EDF27AB00BC2A4D /* LaunchScreen.storyboard */,
@@ -111,6 +141,34 @@
 			path = FlickrDownloadApplicationTests;
 			sourceTree = "<group>";
 		};
+		14458C661EDF283000BC2A4D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				14458C631EDF283000BC2A4D /* FDADataBase.h */,
+				14458C641EDF283000BC2A4D /* FDAFlickrDataBase.h */,
+				14458C651EDF283000BC2A4D /* FDAFlickrDataBase.m */,
+			);
+			name = DataBase;
+			path = ../../NSOperationProject/NSOperationProject;
+			sourceTree = "<group>";
+		};
+		14458C6B1EDF28B000BC2A4D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14458C681EDF28A500BC2A4D /* FDACell.h */,
+				14458C691EDF28A500BC2A4D /* FDACell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		14458C6C1EDF57E400BC2A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14458C6D1EDF57E400BC2A4D /* Masonry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +179,7 @@
 				14458C1D1EDF27AB00BC2A4D /* Sources */,
 				14458C1E1EDF27AB00BC2A4D /* Frameworks */,
 				14458C1F1EDF27AB00BC2A4D /* Resources */,
+				14458C711EDF57E800BC2A4D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14458C6A1EDF28A500BC2A4D /* FDACell.m in Sources */,
 				14458C2C1EDF27AB00BC2A4D /* ViewController.m in Sources */,
 				14458C291EDF27AB00BC2A4D /* AppDelegate.m in Sources */,
+				14458C671EDF283000BC2A4D /* FDAFlickrDataBase.m in Sources */,
 				14458C261EDF27AB00BC2A4D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q4LCPSKEPX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FlickrDownloadApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.devTeam.FlickrDownloadApplication;
@@ -368,6 +433,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q4LCPSKEPX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FlickrDownloadApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.devTeam.FlickrDownloadApplication;
@@ -420,6 +489,7 @@
 				14458C451EDF27AB00BC2A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14458C461EDF27AB00BC2A4D /* Build configuration list for PBXNativeTarget "FlickrDownloadApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +498,7 @@
 				14458C481EDF27AB00BC2A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
