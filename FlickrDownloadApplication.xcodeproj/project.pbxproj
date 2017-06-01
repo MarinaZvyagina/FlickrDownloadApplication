@@ -14,11 +14,11 @@
 		14458C311EDF27AB00BC2A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14458C301EDF27AB00BC2A4D /* Assets.xcassets */; };
 		14458C341EDF27AB00BC2A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14458C321EDF27AB00BC2A4D /* LaunchScreen.storyboard */; };
 		14458C3F1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458C3E1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.m */; };
-		14458C671EDF283000BC2A4D /* FDAFlickrDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458C651EDF283000BC2A4D /* FDAFlickrDataBase.m */; };
 		14458C6A1EDF28A500BC2A4D /* FDACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458C691EDF28A500BC2A4D /* FDACell.m */; };
 		14458C6E1EDF57E400BC2A4D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14458C6D1EDF57E400BC2A4D /* Masonry.framework */; };
 		14458C6F1EDF57E700BC2A4D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14458C6D1EDF57E400BC2A4D /* Masonry.framework */; };
 		14458C701EDF57E800BC2A4D /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14458C6D1EDF57E400BC2A4D /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14458C9F1EE0782200BC2A4D /* FDAFlickrDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458C9E1EE0782200BC2A4D /* FDAFlickrDataBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +59,12 @@
 		14458C3A1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrDownloadApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14458C3E1EDF27AB00BC2A4D /* FlickrDownloadApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrDownloadApplicationTests.m; sourceTree = "<group>"; };
 		14458C401EDF27AB00BC2A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14458C631EDF283000BC2A4D /* FDADataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDADataBase.h; sourceTree = "<group>"; };
-		14458C641EDF283000BC2A4D /* FDAFlickrDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAFlickrDataBase.h; sourceTree = "<group>"; };
-		14458C651EDF283000BC2A4D /* FDAFlickrDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAFlickrDataBase.m; sourceTree = "<group>"; };
 		14458C681EDF28A500BC2A4D /* FDACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDACell.h; sourceTree = "<group>"; };
 		14458C691EDF28A500BC2A4D /* FDACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDACell.m; sourceTree = "<group>"; };
 		14458C6D1EDF57E400BC2A4D /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		14458C9C1EE0782200BC2A4D /* FDADataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDADataBase.h; path = FlickrDownloadApplication/FDADataBase.h; sourceTree = SOURCE_ROOT; };
+		14458C9D1EE0782200BC2A4D /* FDAFlickrDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDAFlickrDataBase.h; path = FlickrDownloadApplication/FDAFlickrDataBase.h; sourceTree = SOURCE_ROOT; };
+		14458C9E1EE0782200BC2A4D /* FDAFlickrDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FDAFlickrDataBase.m; path = FlickrDownloadApplication/FDAFlickrDataBase.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +144,9 @@
 		14458C661EDF283000BC2A4D /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				14458C631EDF283000BC2A4D /* FDADataBase.h */,
-				14458C641EDF283000BC2A4D /* FDAFlickrDataBase.h */,
-				14458C651EDF283000BC2A4D /* FDAFlickrDataBase.m */,
+				14458C9C1EE0782200BC2A4D /* FDADataBase.h */,
+				14458C9D1EE0782200BC2A4D /* FDAFlickrDataBase.h */,
+				14458C9E1EE0782200BC2A4D /* FDAFlickrDataBase.m */,
 			);
 			name = DataBase;
 			path = ../../NSOperationProject/NSOperationProject;
@@ -277,8 +277,8 @@
 				14458C6A1EDF28A500BC2A4D /* FDACell.m in Sources */,
 				14458C2C1EDF27AB00BC2A4D /* ViewController.m in Sources */,
 				14458C291EDF27AB00BC2A4D /* AppDelegate.m in Sources */,
-				14458C671EDF283000BC2A4D /* FDAFlickrDataBase.m in Sources */,
 				14458C261EDF27AB00BC2A4D /* main.m in Sources */,
+				14458C9F1EE0782200BC2A4D /* FDAFlickrDataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
